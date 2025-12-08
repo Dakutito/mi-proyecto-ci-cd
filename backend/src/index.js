@@ -8,7 +8,8 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/api/saludo", (req, res) => {
-  res.json({ mensaje: "Hola desde el backend con Express + CI/CD 🚀" });
+res.json({ mensaje: "Hola desde el backend con CI/CD funcionando correctamente 🚀" });
+
 });
 
 app.listen(PORT, () => {
