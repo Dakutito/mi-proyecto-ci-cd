@@ -4,7 +4,7 @@ function App() {
   const [mensaje, setMensaje] = useState("Cargando...");
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/saludo")
+    fetch("https://backend-express-ci-cd-latest-q4sf.onrender.com/api/saludo")
       .then((res) => res.json())
       .then((data) => setMensaje(data.mensaje))
       .catch(() =>
@@ -22,4 +22,3 @@ function App() {
 }
 
 export default App;
-
